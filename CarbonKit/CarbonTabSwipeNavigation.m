@@ -210,7 +210,7 @@
     CGFloat tabScrollViewWidth = CGRectGetWidth(self.carbonTabSwipeScrollView.frame);
 
     CGFloat indicatorMaxOriginX = tabScrollViewWidth / 2 - selectedSegmentWidth / 2;
-    CGFloat offsetX = selectedSegmentMinX - indicatorMaxOriginX;
+    CGFloat offsetX = selectedSegmentMinX - (indicatorMaxOriginX - (selectedSegmentWidth * 0.25));
 
     if (segmentedWidth <= tabScrollViewWidth) {
         offsetX = 0;

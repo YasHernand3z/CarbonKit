@@ -189,6 +189,10 @@
     return CGRectGetWidth(self.segments[index].frame);
 }
 
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+return true;
+}
+
 - (CGFloat)getWidth {
     CGFloat width = 0;
     for (UIView *segment in self.segments) {
